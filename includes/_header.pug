@@ -1,0 +1,29 @@
+nav.navbar.is-transparent.is-fixed-top
+  .container
+    .navbar-brand
+      a.navbar-item(href='index.html')
+        img(src='assets/images/logo-piq.png', alt='PIQ Strata')
+      //- a
+      .navbar-burger.burger(data-target='navbarExampleTransparentExample')
+        span
+        span
+        span
+      //- navbar-burger
+    //- navbar-brand
+    #navbarExampleTransparentExample.navbar-menu
+      .navbar-end
+        a.navbar-item(href='#sectionMembers')
+          | Strata Members
+        //- a
+        a.navbar-item(href='#sectionManagers')
+          | Strata Managers
+        //- a
+        .navbar-item
+          p.control
+            a.button.is-danger.is-outlined(href='') Log in
+          //- p
+        //- navbar-item
+      //- navbar-end
+    //- navbar-menu
+  //- container
+//- nav

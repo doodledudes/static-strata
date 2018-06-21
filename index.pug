@@ -1,0 +1,263 @@
+extends ./layout/_public.pug
+
+block content
+
+  section.hero.is-primary.is-flex-desktop.--banner
+    .hero-body
+      .container
+        .columns
+          .column
+            h1.title.is-2
+              | Welcome to Strata Portal
+            |       
+            h2.subtitle.is-4
+              | Your Self-Service Portal
+            //- h2
+          //- column
+          .column.is-half-tablet.is-5-desktop
+            .card
+              .card-content
+                p.title.is-5.has-text-black-bis Log in to Strata Portal
+                .field
+                  p.control.has-icons-left.has-icons-right
+                    input.input(type="email", placeholder="Email")
+                    span.icon.is-small.is-left
+                      i.fas.fa-envelope
+                    //- span
+                    span.icon.is-small.is-right
+                      i.fas.fa-check
+                    //- span
+                  //- p
+                //- field
+                .field
+                  p.control.has-icons-left
+                    input.input(type="password", placeholder="Password")
+                    span.icon.is-small.is-left
+                      i.fas.fa-lock
+                    //- span
+                  //- p
+                //- field
+                .columns.is-mobile
+                  .column.is-half
+                    .field
+                      .control
+                        label.checkbox
+                          input(type="checkbox")
+                          | &nbsp;&nbsp;&nbsp;Remember me
+                        //- label
+                      //- control
+                    //- field
+                  //- column
+                  .column.is-half
+                    .field
+                      p.control.has-text-right
+                        a.button.is-danger(href='dashboard.html') Log in
+                      //- p
+                    //- field
+                  //- column
+                //- columns
+              //- card-content
+              footer.card-footer
+                p.card-footer-item
+                  span
+                    a.is-primary(href="") Forgotten password?
+                  //- span
+                //- p
+                p.card-footer-item
+                  span
+                    a.is-primary(href="") Register an Account
+                  //- span
+                //- p
+              //- footer
+            //- card
+          //- column
+        //- columns
+      //- container
+    //- hero-body
+  //- section
+  section.section#sectionMembers
+    .container
+      .content
+        h1.title Strata Members
+        p.subtitle Round the clock access to your lot details
+          br
+          span.is-size-6.has-text-primary Access to all the information you need, when you need it!
+        //- p
+        p Enjoy immediate access to your lot information, notices and payments as well as upcoming or past meetings.
+        p Strata Portal saves you time and offers increased convenience by providing access to the information you need at any time of day, even from your mobile device if you're out on the road.
+      //- content
+      br
+      .columns
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-database.fa-stack-2x.has-text-default
+                  |     
+                  i.fas.fa-percent.fa-stack-1x.has-text-light
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p View details of your levy positions
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-certificate.fa-stack-2x.has-text-default
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p View and download annual insurance certificate
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x.has-text-default
+                  |     
+                  i.fas.fa-download.fa-stack-1x.has-text-light
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p View and download information relating to the AGM
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x.has-text-default
+                  |     
+                  i.fas.fa-paperclip.fa-stack-1x.has-text-light
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p View and download documents attached to your lot
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-desktop.fa-stack-2x.has-text-default
+                  |     
+                  i.far.fa-file-alt.fa-stack-1x.has-text-default
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p Accessible 24/7 from your computer or mobile phone browser
+              //- content
+            //- media-content
+          //- article
+        //- column
+      //- columns
+      br
+      .content
+        p Speak to your Strata Manager to&nbsp;
+          a(href='') register your account
+          | &nbsp;today.
+        //- p
+      //- content
+    //- container
+  //- section
+  section.section.--light#sectionManagers
+    .container
+      .content
+        h1.title Strata Managers
+        p.subtitle Streamline administration processes and increase your efficiency
+          br
+          span.is-size-6.has-text-primary Saving your time and helping to ease your workload
+        //- p
+        p As Strata Managers, we know how time poor you can be, always fighting fires, answering phone calls, acting as a go-between dealing with different parties, and the list goes on!
+        p Strata Portal will help make your working day that much easier! Your clients will now have round the clock access to the information they need online. This new solution will ease the administrative burden for you and help save you time!
+      //- content
+      br
+      .columns
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-cogs.fa-stack-2x.has-text-default
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p Value-added service to help you acquire and retain Strata Plans
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-rss.fa-stack-2x.has-text-default
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p Keep your clients informed with latest industry or office news
+              //- content
+            //- media-content
+          //- article
+        //- column
+        .column
+          article.media
+            figure.media-left
+              span.icon.is-large
+                span.fa-stack.fa-lg
+                  i.fas.fa-mobile-alt.fa-stack-2x.has-text-default
+                //- span
+              //- span
+            |   
+            .media-content
+              .content
+                p Client access 24/7 from any internet connected device
+              //- content
+            //- media-content
+          //- article
+        //- column
+      //- columns
+      br
+      .content
+        p
+          a(href='') Register your account
+          | &nbsp;and get started today!
+        //- p
+      //- content
+    //- container
+  //- section
+
+block scripts
+  script.
+    
